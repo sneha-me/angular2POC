@@ -1,0 +1,30 @@
+{
+  "welcomeText": "Bienvenue",
+  "parameterText": "Composant tableau de bord avec paramètre de route",
+  "sellingTxt": "Vente de texte",
+  "textbook1": "anges et démons",
+  "textbook2": "Immortels de Meluha",
+  "textbook3": "Enfer",
+  "sellingText2": "Top Locations",
+  "nameErrTxt": "S'il vous plaît entrer un nom",
+  "lenErrTxt": "S'il vous plaît entrer atleast 4 charcters",
+  "nameTxt": "prénom",
+  "emailTxt": "Email",
+  "emailErrTxt": "Veuillez entrer un identifiant email valide",
+  "emailPatternErrTxt": "L'adresse e-mail ne peut pas être vide.",
+  "countryTxt": "Pays",
+  "contactTitle": "Contactez nous",
+  "QueryTxt": "Question",
+  "DateRangeTxt": "Sélectionner la plage de dates",
+  "sel-lang": "Sélectionnez une langue",
+  "Languages": {
+    "english": "Anglais",
+    "french": "français"
+  },
+  "bookstoreTxt": "Librairie",
+  "HomeTxt": "Accueil",
+  "dashboardTxt": "Tableau de bord",
+  "aboutTxt": "Sur",
+  "contactTxt": "Contact",
+  "aboutTxt2": "À propos de nous"
+}

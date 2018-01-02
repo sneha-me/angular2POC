@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [ "es2015", "dom" ],
+    
+    "skipLibCheck": true //fix for error TS2415: Class 'Subject<T>' incorrectly extends base class 'Observable<T>'.
+
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "./app/locale"
+  }
+}

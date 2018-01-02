@@ -1,0 +1,30 @@
+{
+  "welcomeText": "Welcome",
+  "parameterText": "Dashboard component with route parameter :",
+  "sellingTxt": "Top Selling",
+  "textbook1": "Angels &Demons",
+  "textbook2": "Immortals of Meluha",
+  "textbook3": "Enfer",
+  "sellingText2": "Top Rentals",
+  "nameErrTxt": "Please enter a name",
+  "lenErrTxt": "Please enter atleast 4 charcters",
+  "nameTxt": "Name",
+  "emailTxt": "Email",
+  "emailErrTxt": "Please enter a valid email id",
+  "emailPatternErrTxt": "Email Id cannot be blank.",
+  "countryTxt": "Country",
+  "contactTitle": "contact Us",
+  "QueryTxt": "Query",
+  "DateRangeTxt": "Select Date Range",
+  "sel-lang": "Select a Language",
+  "Languages": {
+    "english": "English",
+    "french": "French"
+  },
+  "bookstoreTxt": "BookStore",
+  "HomeTxt": "Home",
+  "dashboardTxt": "DashBoard",
+  "aboutTxt": "About",
+  "contactTxt": "Contact",
+  "aboutTxt2": "About Us"
+}

@@ -1,0 +1,82 @@
+﻿<div>
+    <h4 class="title">{{'contactTitle' | translate}}</h4>
+</div>
+
+<form #contactForm="ngForm" (ngSubmit)="submitQuery(contactForm.value)" autocomplete="off">
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label for="name" class="control-label col-md-3">{{'nameTxt' | translate}}</label>
+            <div class="col-md-4">
+                <input class="form-control" placeholder="Enter Name" [(ngModel)]="name" name="uname"
+                       required minlength="4" #nameRef="ngModel" />
+                <div *ngIf="nameRef.errors && (nameRef.dirty || nameRef.touched)" class="alert alert-danger">
+                    <div [hidden]="!nameRef.errors.required">
+                        {{'nameErrTxt' | translate}}
+                    </div>
+                    <div [hidden]="!nameRef.errors.minlength">
+                        {{'lenErrTxt' | translate }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="control-label col-md-3">{{'emailTxt' | translate}}</label>
+            <div class="col-md-4">
+                <input type="email" class="form-control" #emailRef="ngModel" placeholder="Email"
+                       name="uemail" [(ngModel)]="email" required pattern="^[a-z0-9.+%_-]+@[a-z]+\.[a-z]{3}$" />
+                <div *ngIf="emailRef.errors && (emailRef.dirty || emailRef.touched)" class="alert alert-danger">
+                    <div [hidden]="!emailRef.errors.pattern">
+                        {{'emailErrTxt' | translate }}
+                    </div>
+                    <div [hidden]="!emailRef.errors.required">
+                        {{'emailPatternErrTxt' | translate }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="query" class="control-label col-md-3">{{'countryTxt' | translate}}</label>
+            <!-- <div class="col-md-4 ui-widget" >
+                    <input type="text" name="selectedVal" [(ngModel)]="selectedVal" id="selectedVal" /><i class="arrow_down"></i>
+                    <div>
+                        <ul class="dropdown">
+                            <input type="text" name="term" [(ngModel)]="term" />
+                            <li *ngFor="let country of countries | countryFilter: term" value="{{country.code}}">
+                                <a (click) = "setDropdownValue(country.name)"> {{country.name}} </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p> selected dropdown value is ::: {{selectedVal}}</p>
+                </div>
+            -->
+            <div class="col-md-4">
+                <select class="selectpicker" data-live-search="true">
+                    <option *ngFor="let country of countries">{{country.name}}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="query" class="control-label col-md-3">{{'QueryTxt' | translate}}</label>
+            <div class="col-md-4">
+                <textarea class="form-control" placeholder="Query" cols="20" rows="7" name="uquery" [(ngModel)]="query"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="dateRange" class="control-label col-md-3">{{'DateRangeTxt' | translate}}</label>
+            <div class="col-md-4">
+                <my-date-range-picker name="mydaterange" [options]="myDateRangePickerOptions"
+                                      [(ngModel)]="model" required></my-date-range-picker>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-3">
+                <button class="btn btn-primary">Submit</button>
+                <button class="btn" (click)="redirectToHome()">Home</button>
+            </div>
+        </div>
+    </div>
+</form>

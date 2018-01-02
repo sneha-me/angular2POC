@@ -1,0 +1,30 @@
+﻿
+.panel-primary {
+    background-color: cyan;
+    position: relative;
+    top: 3em;
+    left: 3em;
+    border-color: cyan;
+}
+
+.panel-heading{
+    background-color: cyan;
+    border-color: cyan;
+    color: black;
+    font-weight: bold;
+}
+
+.panel-danger {
+    background-color: lightpink;
+    position: relative;
+    top: 3em;
+    left: 3em;
+    border-color: cyan;
+}
+
+.p2 {
+    background-color: lightpink;
+    border-color: lightpink;
+    color: black;
+    font-weight: bold;
+}
