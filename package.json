@@ -1,5 +1,5 @@
 {
-  "name": "angular-bookstore",
+  "name": "angular2-POC",
   "version": "1.0.0",
   "description": "bookstore-dashboard",
   "scripts": {
@@ -8,8 +8,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\"",
-    "internationalize": "ng-xi18n -p tsconfig.json",
-      "test":"tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\""
+    "internationalize": "ng-xi18n -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -17,7 +16,11 @@
   },
   "keywords": [
     "angular2",
-    "routing"
+    "routing",
+    "unit testing",
+    "jasmine",
+    "karma",
+    "indexedDB"
   ],
   "author": "Sneha V",
   "license": "ISC",
@@ -53,7 +56,8 @@
     "karma-chrome-launcher": "^0.2.1",
     "karma-cli": "^0.0.4",
     "karma-htmlfile-reporter": "^0.2.2",
-    "karma-jasmine": "^0.3.6"
+    "karma-jasmine": "^0.3.6",
+    "karma-jasmine-html-reporter": "^0.2.2"
   },
   "homepage": "https://github.com/pcmgit007/angular-bookstore#readme"
 }
