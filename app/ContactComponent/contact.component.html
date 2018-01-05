@@ -2,7 +2,7 @@
     <h4 class="title">{{'contactTitle' | translate}}</h4>
 </div>
 
-<form #contactForm="ngForm" (ngSubmit)="submitQuery(contactForm.value)" autocomplete="off">
+<form #contactForm="ngForm" (ngSubmit)="submitQuery(contactForm.value, $event)" autocomplete="off">
     <div class="form-horizontal">
         <div class="form-group">
             <label for="name" class="control-label col-md-3">{{'nameTxt' | translate}}</label>
@@ -52,7 +52,7 @@
                 </div>
             -->
             <div class="col-md-4">
-                <select class="selectpicker" data-live-search="true">
+                <select class="selectpicker" data-live-search="true" name="ucountry" [(ngModel)]="country">
                     <option *ngFor="let country of countries">{{country.name}}</option>
                 </select>
             </div>

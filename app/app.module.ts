@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 //import { DatePickerModule } from 'ng2-datepicker';
 import { MyDateRangePickerModule } from 'mydaterangepicker';
 import { TranslateModule, TranslateService } from 'ng2-translate';
+import { CommonService } from './Shared/common.service';
 
 
 
@@ -17,9 +18,8 @@ import { ContactComponent } from './ContactComponent/contact.component';
 import { PageNotFoundComponent } from './PageNotFoundComponent/pageNotFound.component';
 import { FilterCountry } from './Shared/contry.filter';
 import { AutoCompleteComponent } from './AutoCompleteComponent/autocomplete.component';
-
-
-
+import { ViewContactComponent } from './ViewContactComponent/view.contact.component';
+import { AllUsersComponent } from './AllUsersComponent/all.users.component';
 
 
 @NgModule({
@@ -30,8 +30,8 @@ import { AutoCompleteComponent } from './AutoCompleteComponent/autocomplete.comp
        
     declarations: [AppComponent, HomeComponent, DashboardComponent,
         AboutComponent, ContactComponent, PageNotFoundComponent, FilterCountry,
-        AutoCompleteComponent],
-    providers: [TranslateService],
+        AutoCompleteComponent, ViewContactComponent, AllUsersComponent],
+    providers: [TranslateService, CommonService],
     bootstrap: [AppComponent]
 })
 

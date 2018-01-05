@@ -18,7 +18,8 @@
             'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
 
             'mydaterangepicker': 'npm:mydaterangepicker/bundles/mydaterangepicker.umd.js',
-            'ng2-translate':'npm:ng2-translate/bundles/ng2-translate.umd.js'
+            'ng2-translate':'npm:ng2-translate/bundles/ng2-translate.umd.js',
+			'JsStore': 'npm:jsstore/dist/jsstore.js'
 
         },
 

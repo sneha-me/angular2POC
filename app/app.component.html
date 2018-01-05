@@ -39,6 +39,7 @@
         -->
         <li><a routerLink="/contact" (click)="toggleContactMenu(); contact=true; dashboard=false; about=false">{{'contactTitle' | translate}}</a></li>
         <li><a routerLink="/about" (click)="toggleMenu(); contact=false; dashboard=false; about=true">{{'aboutTxt2' | translate}}</a></li>
+		<li><a routerLink="/all" (click)="toggleMenu()"> All Users </a> </li>
 
     </ul>
 </div>
