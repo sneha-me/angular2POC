@@ -1,0 +1,16 @@
+<div class="jumbotron">
+	<h3> Contact Details </h3>
+	<hr/>
+
+	<dl class="dl-horizontal" *ngIf="dataAvailable" >
+		<dt>Name</dt>
+			<dd>{{_details[len-1].Name}}</dd>
+		<dt>Email</dt>
+			 <dd>{{_details[len-1].Email}}</dd>
+		<dt>Country</dt>
+			 <dd>{{_details[len-1].Country}}</dd>
+		<dt>Query</dt>
+			 <dd>{{_details[len-1].Query}}</dd>
+	</dl>
+
+</div>

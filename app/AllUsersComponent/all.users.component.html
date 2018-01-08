@@ -1,0 +1,28 @@
+<div class="jumbotron">
+	<h3 style="text-align:center"> All Users </h3>
+	<br/>
+
+	<table class="table  table-striped">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Country</th>
+				<th>Email</th>
+				<th>Query</th>
+			</tr>
+		</thead>
+		<tbody>
+		<ng-container *ngIf="data">
+			<tr *ngFor="let user of allUsers; let i=index">
+				<td>{{user.Name}}</td>
+				<td>{{user.Country}}</td>
+				<td>{{user.Email}}</td>
+				<td>{{user.Query}}</td>
+			</tr>
+		</ng-container>
+			
+		</tbody>
+	
+	</table>
+
+</div>
