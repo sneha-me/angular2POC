@@ -1,7 +1,7 @@
 ﻿<header>
     <span id="title"><strong>{{'bookstoreTxt' | translate}}</strong></span> <i class="glyphicon glyphicon-menu-hamburger" (click)="toggleMenu()"></i>
 
-    
+    <h2> {{message}} </h2>
         <ol class="breadcrumb" stye="margin-top:0!important">
             <li class="breadcrumb-item"><a href="/">{{'HomeTxt' | translate}}</a></li>
             <li class="breadcrumb-item active" *ngIf="dashboard"><a href="#">{{'dashboardTxt' | translate}}</a></li>
@@ -40,6 +40,7 @@
         <li><a routerLink="/contact" (click)="toggleContactMenu(); contact=true; dashboard=false; about=false">{{'contactTitle' | translate}}</a></li>
         <li><a routerLink="/about" (click)="toggleMenu(); contact=false; dashboard=false; about=true">{{'aboutTxt2' | translate}}</a></li>
 		<li><a routerLink="/all" (click)="toggleMenu()"> All Users </a> </li>
+
 
     </ul>
 </div>

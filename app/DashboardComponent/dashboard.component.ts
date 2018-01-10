@@ -18,6 +18,7 @@ export class DashboardComponent implements OnInit{
         //  this.id = +params['id'];
         this.id = this._route.snapshot.params['id'];
 
+
     //})
     }
 
