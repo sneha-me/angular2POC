@@ -8,3 +8,11 @@
     font-weight: bold;
 }
 
+#loginForm{
+	position: absolute;
+    top: 40%;
+    left: 25%;
+    width: 60%;
+    height: 30%;
+}
+

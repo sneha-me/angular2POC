@@ -1,0 +1,29 @@
+<form id="loginForm" #loginForm="ngForm" (ngSubmit) = "login(loginForm.value, $event)">
+ <div class="form-horizontal">
+	<div class="form-group">
+		<label class="col-md-3 control-label" for="username" > User Name : </label>
+        <div class="col-md-4">
+            <input type="text" class="form-control" name="username" required [(ngModel)]="username" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-md-3 control-label" for="password" > Password : </label>
+        <div class="col-md-4">
+            <input type="password" class="form-control" name="pwd" required [(ngModel)]="password" />
+		</div>
+	</div>
+	<div class="form-group">
+        <div class="col-md-offset-4">
+            <button class="btn btn-primary">Login</button>
+			<a [routerLink]="['/register']" class="btn btn-link">Register</a>
+			
+		</div>
+		<div *ngIf="loading">
+			<div class="alert alert-danger">
+				{{err}} 
+			</div>
+		</div>
+		<h2>{{message}}</h2>
+	</div>
+</div>
+</form>

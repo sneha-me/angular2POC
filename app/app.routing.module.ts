@@ -9,6 +9,7 @@ import { ContactComponent } from './ContactComponent/contact.component';
 import { PageNotFoundComponent } from './PageNotFoundComponent/pageNotFound.component';
 import { ViewContactComponent } from './ViewContactComponent/view.contact.component';
 import { AllUsersComponent } from './AllUsersComponent/all.users.component';
+import { RegisterComponent } from './register/index';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
 	{ path: 'viewContact', component: ViewContactComponent },
     { path: 'about', component: AboutComponent },
 	{ path: 'all', component: AllUsersComponent },
+	{ path: 'register', component: RegisterComponent },
     { path: 'home', component: HomeComponent },
     { path: '', redirectTo: '/home', pathMatch:'full' },
     { path: '*', component: PageNotFoundComponent }
